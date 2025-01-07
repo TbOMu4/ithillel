@@ -10,7 +10,7 @@ if (userYearBirth > 0 && userYearBirth <= currentYear) {
   alert(`Шкода, що ви не захотіли вписати свій справжній рік народження`)
 }
 
-const userCityResidence = prompt("Введіть своє місто проживання: ")
+const userCityResidence = prompt("Введіть своє місто проживання: ").trim()
 let messageFirst
 let userCountry
 
@@ -36,7 +36,7 @@ if (userCityResidence) {
   alert(`Шкода, що ви не захотіли вказати місто проживання`)
 }
 
-const userFavoriteSport = prompt("Введіть свій улюблений вид спорту: ")
+const userFavoriteSport = prompt("Введіть свій улюблений вид спорту: ").trim()
 let messageSecond
 
 if (userFavoriteSport) {
