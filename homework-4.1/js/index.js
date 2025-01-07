@@ -1,4 +1,4 @@
 "use strict"
 
 const userName = prompt("Enter your name ")
-alert(`Hello, ${userName}! How are you?`)
+alert(`Hello, ${userName || 'stranger'}! How are you?`)
