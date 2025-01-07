@@ -10,11 +10,11 @@ if (userYearBirth > 0 && userYearBirth <= currentYear) {
   alert(`Шкода, що ви не захотіли вписати свій справжній рік народження`)
 }
 
-const userCityResidence = prompt("Введіть своє місто проживання: ") ?? ""
+const userCityResidence = prompt("Введіть своє місто проживання: ")
 let messageFirst
 let userCountry
 
-if (userCityResidence.trim()) {
+if (userCityResidence) {
   switch (userCityResidence.toLowerCase()) {
     case "київ":
       userCountry = "України"
@@ -36,10 +36,10 @@ if (userCityResidence.trim()) {
   alert(`Шкода, що ви не захотіли вказати місто проживання`)
 }
 
-const userFavoriteSport = prompt("Введіть свій улюблений вид спорту: ") ?? ""
+const userFavoriteSport = prompt("Введіть свій улюблений вид спорту: ")
 let messageSecond
 
-if (userFavoriteSport.trim()) {
+if (userFavoriteSport) {
   switch (userFavoriteSport.toLowerCase()) {
     case "Бамбінтон":
       messageSecond = `Круто! Хочеш стати як Ли Ян Ван Цзилинь?`
