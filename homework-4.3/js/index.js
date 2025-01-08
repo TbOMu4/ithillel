@@ -10,51 +10,53 @@ if (userYearBirth > 0 && userYearBirth <= currentYear) {
   alert(`Шкода, що ви не захотіли вписати свій справжній рік народження`)
 }
 
-const userCityResidence = prompt("Введіть своє місто проживання: ").trim()
+const userCityResidence = prompt("Введіть своє місто проживання: ")
 let messageFirst
 let userCountry
 
 if (userCityResidence) {
-  switch (userCityResidence.toLowerCase()) {
+  const city = userCityResidence.toLowerCase()
+  switch (city) {
     case "київ":
       userCountry = "України"
-      messageFirst = `Ти живеш у столиці ${userCountry}`
+      messageFirst = `Ти живеш у столиці ${userCountry.trim()}`
       break
     case "вашингтон":
       userCountry = "США"
-      messageFirst = `Ти живеш у столиці ${userCountry}`
+      messageFirst = `Ти живеш у столиці ${userCountry.trim()}`
       break
     case "лондон":
-      userCountry = "Велика Британії"
-      messageFirst = `Ти живеш у столиці ${userCountry}`
+      userCountry = "Великої Британії"
+      messageFirst = `Ти живеш у столиці ${userCountry.trim()}`
       break
     default:
-      messageFirst = `Ти живеш у місті ${userCityResidence}`
+      messageFirst = `Ти живеш у місті ${userCityResidence.trim()}`
   }
   alert(messageFirst)
 } else {
   alert(`Шкода, що ви не захотіли вказати місто проживання`)
 }
 
-const userFavoriteSport = prompt("Введіть свій улюблений вид спорту: ").trim()
+const userFavoriteSport = prompt("Введіть свій улюблений вид спорту: ")
 let messageSecond
 
 if (userFavoriteSport) {
-  switch (userFavoriteSport.toLowerCase()) {
-    case "Бамбінтон":
+  const sport = userFavoriteSport.toLowerCase()
+  switch (sport) {
+    case "бамбінтон":
       messageSecond = `Круто! Хочеш стати як Ли Ян Ван Цзилинь?`
       break
-    case "Бокс":
+    case "бокс":
       messageSecond = `Круто! Хочеш стати як  Олександр Усик?`
       break
-    case "Футбол":
+    case "футбол":
       messageSecond = `Круто! Хочеш стати як Гаррі Магвайр?`
       break
     default:
       messageSecond = `Гарний вибір!`;
   }
   alert(messageSecond)
-  alert(`Ваш улюблений вид спорту ${userFavoriteSport}`)
+  alert(`Ваш улюблений вид спорту ${userFavoriteSport.trim()}`)
 } else {
   alert(`Шкода, що ви не захотіли вказати улюблений вид спорту`)
 }
