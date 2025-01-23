@@ -1,6 +1,5 @@
 "use strict"
 
-
 const iterateOverEachElement = () => {
   for (let i = 1; i <= 10; i++) {
     let enterNumber = parseFloat(prompt("Введіть число більше за 100"))
