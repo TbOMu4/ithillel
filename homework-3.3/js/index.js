@@ -5,3 +5,4 @@ const numberString = number.toString()
 const numberArrayToString = numberString.split('').join(' ')
 console.log(numberArrayToString)
 
+`${number}`.split('').join(' ')
