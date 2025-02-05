@@ -1,11 +1,8 @@
 "use strict"
 
-function СontactBook(name, phone, email) {
+function СontactBook() {
     this.contacts = []
-    this.name = name
-    this.phone = phone
-    this.email = email
-
+    
     this.contactSearch = function (name) {
         const contact = this.contacts.find(el => el.name === name)
         contact ?
