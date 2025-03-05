@@ -1,0 +1,71 @@
+@import "null.css";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 50px;
+    min-height: 100vh;
+
+}
+
+.block-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.table {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.button {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background-color: red;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.selection {
+    background-color: lightslategrey;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+input {
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
