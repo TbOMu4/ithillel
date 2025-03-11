@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <form action="#" class="form-block" id="form" method="post" novalidate>
+        <h1 class="form-title">we would like to help you</h1>
+        <div class="form-line">
+            <label class="form-label" for="name"></label>
+            <input class="form-input" id="name" name="name" placeholder="Введіть ім'я..." required type="text">
+        </div>
+        <div class="form-line">
+            <label class="form-label" for="text"></label>
+            <textarea class="form-input form-input--textarea" id="text" minlength="5" name="text" placeholder="Text"
+                      required></textarea>
+        </div>
+        <span class="form-text">How to answer you?</span>
+        <div class="form-line">
+            <label class="form-label" for="phone"></label>
+            <input class="form-input" id="phone" maxlength="13" name="phone" placeholder="Введіть номер телефону..."
+                   required
+                   type="tel"
+                   value="+380">
+        </div>
+        <div class="form-line">
+            <label class="form-label" for="email"></label>
+            <input class="form-input" id="email" name="email" placeholder="Введіть електрону адресу..." required
+                   type="email">
+        </div>
+        <button class="button" type="submit">Send message</button>
+    </form>
+</div>
+</body>
+</html>
