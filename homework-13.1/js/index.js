@@ -6,7 +6,7 @@ const elText = document.querySelector('#text')
 const elPhone = document.querySelector('#phone')
 const elEmail = document.querySelector('#email')
 const bntSubmit = document.querySelector('.button')
-const elInput = Array.from(document.getElementsByTagName('input'))
+const elInput = Array.from(document.querySelectorAll('input, textarea'))
 
 
 function getValidateInput(input) {
@@ -20,8 +20,10 @@ function getValidateInput(input) {
         errorMessage = 'Дозволяються лише літери'
     } else if (input.id === 'name' && (value.length < 2 || value.length > 30)) {
         errorMessage = 'Назва має містити від 2 до 30 символів'
-    } else if (input.id === 'phone' && !/^\+\d{12}$/.test(value)) {
-        errorMessage = 'Номер телефону має бути у форматі +380XXXXXXXXX (13 символів)'
+    } else if (input.id === 'text' && value.length < 5) {
+        errorMessage = 'Текст має містити щонайменше 5 символів'
+    } else if (input.id === 'phone' && !/^\+\d{11,15}$/.test(value)) {
+        errorMessage = 'Введіть коректний номер телефону у міжнародному форматі'
     } else if (input.id === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
         errorMessage = 'Введіть дійсну адресу електронної пошти'
     }
