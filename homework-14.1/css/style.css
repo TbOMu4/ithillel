@@ -1,0 +1,121 @@
+@import "null.css";
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap');
+
+body {
+    font-family: "Big Shoulders Stencil", sans-serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 50px;
+    min-height: 100vh;
+    row-gap: 20px;
+}
+
+
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: flex;
+
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: lightcoral;
+}
+
+.slide-image {
+    background-color: #FFCF2D;
+    padding: 10px 10px 0 10px;
+}
+
+.slide-title {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.slide-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.slide-name, .slide-specialty {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.slide-name {
+    margin-bottom: 10px;
+}
+
+.slider-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.slider-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.slider-bullet.active {
+    background: #333;
+}
+
+.slider-button-prev, .slider-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.slider-button-prev:hover, .slider-button-next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.slider-button-prev {
+    left: 5px;
+}
+
+.slider-button-next {
+    right: 5px;
+}
