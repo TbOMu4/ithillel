@@ -1,0 +1,55 @@
+@import "null.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 50px;
+  min-height: 100vh;
+  row-gap: 20px;
+}
+.weather-widget {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  max-width: 560px;
+  min-height: 200px;
+  padding: 40px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 72%);
+  color: white;
+}
+.weather-widget__title {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+.weather-widget__formate-date {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.weather-widget__weather-main {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.weather-widget__humidity,
+.weather-widget__main-pressure {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.weather-widget__img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 4px;
+}
+.weather-widget__main-temp,
+.weather-widget__main-feels-like,
+.weather-widget__weather-description {
+  margin-bottom: 5px;
+}
