@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <input type="checkbox" class="form-check-input me-2 checkbox" ${todo.completed ? "checked" : ""}>
           <span class="task-text me-2 ${todo.completed ? "text-decoration-line-through" : ""}">${todo.text}</span>
         </div>
-        <button class="btn btn-danger btn-sm btn-delete">Видалити</button>
+         <button class="btn btn-danger btn-sm btn-delete">Видалити</button>
       `;
 
       todoList.appendChild(li);
